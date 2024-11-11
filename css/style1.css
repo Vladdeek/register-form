@@ -14,7 +14,6 @@
 body {
 	height: 100vh;
 	background: var(--bg-color);
-	overflow: hidden;
 }
 
 .square {
@@ -205,22 +204,5 @@ p {
 	margin: 10px;
 }
 .auth-modal {
-	position: relative;
-	visibility: hidden;
-	transform: translateY(-125%);
-	z-index: 100;
-	transition: 0.5s;
-	height: auto;
-	width: auto;
-}
-.blur-screen {
-	position: fixed;
-	visibility: hidden;
-	height: 100vh;
-	width: 100vw;
-	background-color: rgba(0, 0, 0, 0.125);
-	backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px);
-	z-index: 99;
-	transition: 0.5s;
+	transform: translateY(25%);
 }

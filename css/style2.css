@@ -14,7 +14,6 @@
 body {
 	height: 100vh;
 	background: var(--bg-color);
-	overflow: hidden;
 }
 
 .square {
@@ -138,14 +137,9 @@ body {
 form {
 	position: relative;
 	z-index: 1;
-	background-color: rgba(127.5, 127.5, 127.5, 0.125);
 	height: auto;
 	width: auto;
-	backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px);
 	padding: 25px;
-	border-radius: 10px;
-	border: solid 1px rgba(255, 255, 255, 0.125);
 }
 input[type='password'],
 input[type='email'] {
@@ -199,28 +193,6 @@ p {
 .reg-link:hover {
 	text-decoration: underline;
 }
-.btn {
-	background-color: black;
-	color: white;
-	margin: 10px;
-}
 .auth-modal {
-	position: relative;
-	visibility: hidden;
-	transform: translateY(-125%);
-	z-index: 100;
-	transition: 0.5s;
-	height: auto;
-	width: auto;
-}
-.blur-screen {
-	position: fixed;
-	visibility: hidden;
-	height: 100vh;
-	width: 100vw;
-	background-color: rgba(0, 0, 0, 0.125);
-	backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px);
-	z-index: 99;
-	transition: 0.5s;
+	transform: translateY(25%);
 }
