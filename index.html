@@ -8,14 +8,54 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<div class="row">
-			<div class="col-6">
-				<div class="design-form"></div>
-			</div>
-			<div class="col-6">
-				<div class="auth-form"></div>
+		<div class="auth-modal">
+			<div class="content d-flex justify-content-center align-items-center">
+				<div class="row justify-content-center">
+					<div class="col-12">
+						<div class="square">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<div class="content">
+								<form
+									class="log-form flex-column justity-content-center"
+									action=""
+								>
+									<p class="text-center">Авторизация</p>
+									<input type="email" placeholder="Электронная почта" />
+									<input type="password" placeholder="Пароль" />
+									<input
+										class="d-flex justify-content-center"
+										type="submit"
+										value="Войти"
+									/>
+									<div class="suggest d-flex justify-content-center">
+										<p class="reg-text">Нет аккаунта?</p>
+										<p class="reg-link" onclick="changeForm()">Создать</p>
+									</div>
+								</form>
+								<form
+									class="reg-form flex-column justity-content-center"
+									action=""
+								>
+									<p class="text-center">Регистрация</p>
+									<input type="email" placeholder="электронная почта" />
+									<input type="password" placeholder="Пароль" />
+									<input type="password" placeholder="Повторите пароль" />
+									<input type="submit" value="Подтвердить" />
+									<div class="suggest d-flex justify-content-center">
+										<p class="reg-text">Есть аккаунт?</p>
+										<p class="reg-link" onclick="changeForm()">Войти</p>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
